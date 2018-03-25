@@ -1,4 +1,4 @@
-package util
+package fizzbuzz
 
 // IsFizz checks if a given integer is divisible by 3
 func IsFizz(x int) bool {

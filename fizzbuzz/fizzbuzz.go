@@ -2,19 +2,19 @@ package main
 
 import (
 	"fmt"
-	"github.com/kennethc/kata/fizzbuzz/util"
+	"github.com/kennethc/kata/fizzbuzz/lib"
 )
 
 func main() {
 	a := integers(1, 100)
 	for i := 0; i < len(a); i++ {
-		if util.IsFizz(a[i]) {
+		if fizzbuzz.IsFizz(a[i]) {
 			fmt.Printf("Fizz")
 		}
-		if util.IsBuzz(a[i]) {
+		if fizzbuzz.IsBuzz(a[i]) {
 			fmt.Printf("Buzz")
 		}
-		if !util.IsFizz(a[i]) && !util.IsBuzz(a[i]) {
+		if !fizzbuzz.IsFizz(a[i]) && !fizzbuzz.IsBuzz(a[i]) {
 			fmt.Printf("%v", a[i])
 		}
 		fmt.Printf("\n")
